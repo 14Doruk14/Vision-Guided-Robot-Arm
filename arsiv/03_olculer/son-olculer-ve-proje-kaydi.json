@@ -1,0 +1,130 @@
+{
+  "record_date": "2026-10-29",
+  "timezone": "Europe/Istanbul",
+  "revision": 3,
+  "purpose": "Bitirme projesi için robot kol geometrisi ve ilk kinematik model arşivi",
+  "approval": "Kullanıcı, taban bağlantısı düzeltildikten sonra model görünüşünü Olmuş diyerek kabul etti. Bu, fiziksel hareket kalibrasyonu değildir.",
+  "units": "mm",
+  "measurement_method": "Kullanıcının fiziksel kol üzerinde vida/eklem merkezinden merkeze ölçüp söylediği değerler",
+  "lettered_photo_measurements_mm": {
+    "A-B": 40,
+    "A-D": 83,
+    "B-E": 80,
+    "D-E": 35,
+    "H-D": 80,
+    "H-E": 115,
+    "F-G": 80,
+    "G-H": 23
+  },
+  "numbered_photo_measurements_mm": {
+    "1-2": 40,
+    "1-5": 77,
+    "2-3": 85,
+    "3-4": 47,
+    "3-5": 40,
+    "4-5": 20,
+    "4-6": 80,
+    "6-7": 23
+  },
+  "base_mm": {
+    "A_to_ground_vertical": 61,
+    "point_1_to_ground_vertical": 61,
+    "ground_to_rotating_interface_vertical": 31,
+    "rotating_interface_to_A_vertical": 30
+  },
+  "user_reported_correspondence": {
+    "4-6": "F-G",
+    "6-7": "G-H"
+  },
+  "cancelled_point": "C",
+  "model_lengths_mm": {
+    "1-2-fixed": 40,
+    "1-5": 77,
+    "2-3": 85,
+    "3-4": 47,
+    "3-5": 40,
+    "4-5": 20,
+    "4-6": 80,
+    "6-7": 23,
+    "1-V": 40,
+    "V-R": 80,
+    "R-5": 35,
+    "5-7": 80,
+    "R-7": 115
+  },
+  "model_joint_roles": {
+    "1": "Common shoulder axis; main drive and separate short drive are axially separated independent parts",
+    "2": "Fixed rear base anchor",
+    "3": "Rear triangle joint",
+    "4": "Triangle to upper front rod",
+    "5": "Common upper axis with independent triangle and forearm rotation",
+    "6": "Front upper mount axis",
+    "7": "Front lower mount axis",
+    "V": "Separate short drive lever tip, provisional old A-B endpoint mapping",
+    "R": "Separate horizontal-arm rear joint; not point 3"
+  },
+  "model_correspondence_assumptions": {
+    "1-V": "A-B",
+    "V-R": "B-E",
+    "R-5": "E-D",
+    "5-7": "D-H",
+    "R-7": "E-H"
+  },
+  "preserved_difference": "A-D ölçümü 83 mm, 1-5 ölçümü 77 mm. İki kayıt da korunur. Modelin ana kolunda 77 mm kullanılır; aynı fiziksel eksenlerin ölçüldüğü varsayılmaz.",
+  "reference_geometry": "EEZYbotARM MK1 referans STL dış şekilleri; kullanıcı baskısıyla birebir aynı olduğu doğrulanmadı.",
+  "reference_anchor_direction_mm": {
+    "horizontal": -36.09906482071532,
+    "vertical_above_point_1": 17.2295536526572,
+    "length": 40
+  },
+  "base_yaw_horizontal_offset_mm": {
+    "model_value": 0,
+    "status": "Referans montajdan; kullanıcı tarafından ayrıca ölçülmedi."
+  },
+  "scope": "Kıskaç çeneleri, dişlileri ve kıskaç servosu eklenmedi. Ön uç montajı ve 6-7 bağlantı mesafesi kayıtlı.",
+  "hardware": {
+    "arm": "SANEC montajlı 3B baskı kol",
+    "vision_computer": "Raspberry Pi 5, 8 GB",
+    "microcontroller": "STM32 Discovery; tam kart modeli belirtilmedi",
+    "servo_signal_controller": "PCA9685",
+    "camera": "Henüz seçilmedi"
+  },
+  "next_goal": "Kamera ile iki farklı cisim sınıfını ayırt edip farklı kutulara bırakma. Örnekler köşeli/küp biçimli cisim ve silindir; kesin sınıflar daha sonra belirlenecek.",
+  "firmware_state": "Kullanıcı bazı embedded kodları ve açıları daha önce hazırladığını söyledi; bu arşive henüz iletilmedi.",
+  "digital_checks": {
+    "valid": 1714,
+    "invalid": 787,
+    "maxConstraintErrorMm": 7.105427357601002e-14,
+    "initialPoint7": [
+      34.17867389423205,
+      107.88185892346249
+    ],
+    "faces": 9870,
+    "uiSmokeTest": "passed: initial render, shoulder/base inputs, invalid combination"
+  },
+  "not_yet_validated": [
+    "Gerçek servo sıfır ve limitleri",
+    "Kamera-robot koordinat dönüşümü",
+    "Fiziksel hareket ve konum doğruluğu",
+    "Kütle, tork, esneme, boşluk ve çarpışma",
+    "Kıskaç boyu, tutma noktası ve açıklık kalibrasyonu"
+  ],
+  "sources": [
+    {
+      "title": "SANEC ürün açıklaması",
+      "url": "https://www.sanec.net/sanec-robot-kol-kiti-3d-baski-birlesmis-halde-robot-kol-yesil-5695"
+    },
+    {
+      "title": "EEZYbotARM tasarımcısının montajı",
+      "url": "https://www.instructables.com/EEZYbotARM/"
+    },
+    {
+      "title": "Referans STL dosyalarının kopyası",
+      "url": "https://github.com/louyuoops/MK1_robot_arm/tree/master/3d_model"
+    },
+    {
+      "title": "Tasarımcı ve lisans sayfası",
+      "url": "https://pinshape.com/items/23146-3d-printed-eezybotarm"
+    }
+  ]
+}

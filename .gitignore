@@ -1,0 +1,12 @@
+# Notes for the AI assistant (Turkish dev log)
+CLAUDE.md
+
+# Model archive: third-party EEZYbotARM STLs (CC BY-NC-SA), photos, large generated files.
+# Only the small kinematics sources and measurement files are tracked (added with git add -f).
+arsiv/
+
+# Calibration output from the Pi
+kalibrasyon.json
+
+__pycache__/
+*.pyc

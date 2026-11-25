@@ -1,0 +1,405 @@
+{
+  "model_basis": "numbered-photo kinematic draft",
+  "units": "mm",
+  "lengths": {
+    "1-2-fixed": 40,
+    "1-5": 77,
+    "2-3": 85,
+    "3-4": 47,
+    "3-5": 40,
+    "4-5": 20,
+    "4-6": 80,
+    "6-7": 23,
+    "1-V": 40,
+    "V-R": 80,
+    "R-5": 35,
+    "5-7": 80,
+    "R-7": 115
+  },
+  "base": {
+    "point_1_height": 61,
+    "rotating_interface_height": 31,
+    "assumed_horizontal_offset_to_point_1": 0
+  },
+  "assumptions": [
+    "Reference part geometry from EEZYbotARM MK1, not proven identical to physical kit",
+    "Fixed anchor direction from reference base STL",
+    "Provisional mapping 1-V to A-B, V-R to B-E, R-5 to E-D, 5-7 to D-H",
+    "Main arm 1-5 uses 77 mm; legacy A-D 83 mm preserved and unresolved",
+    "Source mesh simplified for viewing; lateral placement adapted from reference assembly",
+    "No gripper jaws or gripper servo; front mount only"
+  ],
+  "initial_pose": {
+    "1": [
+      0,
+      61
+    ],
+    "2": [
+      -36.09906482071532,
+      78.2295536526572
+    ],
+    "3": [
+      -65.21824535003282,
+      158.08613337719217
+    ],
+    "4": [
+      -25.93036524552927,
+      132.2895739768738
+    ],
+    "5": [
+      -44.16538559903053,
+      124.07470741025239
+    ],
+    "6": [
+      53.23459858385459,
+      120.76097901077564
+    ],
+    "7": [
+      34.17867389423205,
+      107.88185892346249
+    ],
+    "V": [
+      -40,
+      61.00000000000001
+    ],
+    "R": [
+      -78.4409116273329,
+      131.15907862322297
+    ]
+  },
+  "initial_angles": {
+    "shoulder": 125,
+    "drive": 180,
+    "base": 0
+  },
+  "full_measurements": {
+    "record_date": "2026-10-29",
+    "timezone": "Europe/Istanbul",
+    "revision": 5,
+    "purpose": "Bitirme projesi için robot kol geometrisi ve ilk kinematik model arşivi",
+    "approval": "Kullanıcı, taban bağlantısı düzeltildikten sonra model görünüşünü Olmuş diyerek kabul etti. Bu, fiziksel hareket kalibrasyonu değildir.",
+    "units": "mm",
+    "measurement_method": "Kullanıcının fiziksel kol üzerinde vida/eklem merkezinden merkeze ölçüp söylediği değerler",
+    "lettered_photo_measurements_mm": {
+      "A-B": 40,
+      "A-D": 83,
+      "B-E": 80,
+      "D-E": 35,
+      "H-D": 80,
+      "H-E": 115,
+      "F-G": 80,
+      "G-H": 23
+    },
+    "numbered_photo_measurements_mm": {
+      "1-2": 40,
+      "1-5": 77,
+      "2-3": 85,
+      "3-4": 47,
+      "3-5": 40,
+      "4-5": 20,
+      "4-6": 80,
+      "6-7": 23
+    },
+    "base_mm": {
+      "A_to_ground_vertical": 61,
+      "point_1_to_ground_vertical": 61,
+      "ground_to_rotating_interface_vertical": 31,
+      "rotating_interface_to_A_vertical": 30
+    },
+    "user_reported_correspondence": {
+      "4-6": "F-G",
+      "6-7": "G-H"
+    },
+    "cancelled_point": "C",
+    "model_lengths_mm": {
+      "1-2-fixed": 40,
+      "1-5": 77,
+      "2-3": 85,
+      "3-4": 47,
+      "3-5": 40,
+      "4-5": 20,
+      "4-6": 80,
+      "6-7": 23,
+      "1-V": 40,
+      "V-R": 80,
+      "R-5": 35,
+      "5-7": 80,
+      "R-7": 115
+    },
+    "model_joint_roles": {
+      "1": "Common shoulder axis; main drive and separate short drive are axially separated independent parts",
+      "2": "Fixed rear base anchor",
+      "3": "Rear triangle joint",
+      "4": "Triangle to upper front rod",
+      "5": "Common upper axis with independent triangle and forearm rotation",
+      "6": "Front upper mount axis",
+      "7": "Front lower mount axis",
+      "V": "Separate short drive lever tip, provisional old A-B endpoint mapping",
+      "R": "Separate horizontal-arm rear joint; not point 3"
+    },
+    "model_correspondence_assumptions": {
+      "1-V": "A-B",
+      "V-R": "B-E",
+      "R-5": "E-D",
+      "5-7": "D-H",
+      "R-7": "E-H"
+    },
+    "preserved_difference": "A-D ölçümü 83 mm, 1-5 ölçümü 77 mm. İki kayıt da korunur. Modelin ana kolunda 77 mm kullanılır; aynı fiziksel eksenlerin ölçüldüğü varsayılmaz.",
+    "reference_geometry": "EEZYbotARM MK1 referans STL dış şekilleri; kullanıcı baskısıyla birebir aynı olduğu doğrulanmadı.",
+    "reference_anchor_direction_mm": {
+      "horizontal": -36.09906482071532,
+      "vertical_above_point_1": 17.2295536526572,
+      "length": 40
+    },
+    "base_yaw_horizontal_offset_mm": {
+      "model_value": 0,
+      "status": "Referans montajdan; kullanıcı tarafından ayrıca ölçülmedi."
+    },
+    "scope": "Kıskaç çeneleri, dişlileri ve kıskaç servosu eklenmedi. Ön uç montajı ve 6-7 bağlantı mesafesi kayıtlı.",
+    "hardware": {
+      "arm": "SANEC montajlı 3B baskı kol",
+      "vision_computer": "Raspberry Pi 5, 8 GB",
+      "microcontroller": "STM32 Discovery; tam kart modeli belirtilmedi",
+      "servo_signal_controller": "PCA9685",
+      "camera": "Henüz seçilmedi"
+    },
+    "next_goal": "Kamera ile iki farklı cisim sınıfını ayırt edip farklı kutulara bırakma. Örnekler köşeli/küp biçimli cisim ve silindir; kesin sınıflar daha sonra belirlenecek.",
+    "firmware_state": "Kullanıcı bazı embedded kodları ve açıları daha önce hazırladığını söyledi; bu arşive henüz iletilmedi.",
+    "digital_checks": {
+      "valid": 1714,
+      "invalid": 787,
+      "maxConstraintErrorMm": 7.105427357601002e-14,
+      "initialPoint7": [
+        34.17867389423205,
+        107.88185892346249
+      ],
+      "faces": 9870,
+      "uiSmokeTest": "passed: initial render, shoulder/base inputs, invalid combination"
+    },
+    "not_yet_validated": [
+      "Gerçek servo sıfır ve limitleri",
+      "Kamera-robot koordinat dönüşümü",
+      "Fiziksel hareket ve konum doğruluğu",
+      "Kütle, tork, esneme, boşluk ve çarpışma",
+      "Kıskaç boyu, tutma noktası ve açıklık kalibrasyonu"
+    ],
+    "sources": [
+      {
+        "title": "SANEC ürün açıklaması",
+        "url": "https://www.sanec.net/sanec-robot-kol-kiti-3d-baski-birlesmis-halde-robot-kol-yesil-5695"
+      },
+      {
+        "title": "EEZYbotARM tasarımcısının montajı",
+        "url": "https://www.instructables.com/EEZYbotARM/"
+      },
+      {
+        "title": "Referans STL dosyalarının kopyası",
+        "url": "https://github.com/louyuoops/MK1_robot_arm/tree/master/3d_model"
+      },
+      {
+        "title": "Tasarımcı ve lisans sayfası",
+        "url": "https://pinshape.com/items/23146-3d-printed-eezybotarm"
+      }
+    ],
+    "gripper_measurements": {
+      "record_date": "2026-10-30",
+      "units": "mm",
+      "reference": "kiskac-olcum-noktalari.png",
+      "point_definitions": {
+        "K1": "Yandan görünen alt uç bağlantı vidasının merkezi. Üst bağlantı vidası veya servo montaj vidası değil.",
+        "K2": "Üstten fotoğraftaki üst parmağın uçtaki iç tutma yüzü.",
+        "K3": "Üstten fotoğraftaki alt parmağın uçtaki iç tutma yüzü.",
+        "M": "K2 ve K3 arasındaki sanal orta nokta; vida veya mafsal değil."
+      },
+      "measurements": {
+        "K1_to_M_forward_horizontal_closed_mm": 47.5,
+        "K1_to_M_vertical_closed_mm": -37.0,
+        "maximum_inner_gap_K2_K3_mm": 79.0,
+        "minimum_inner_gap_K2_K3_mm": 4.0
+      },
+      "procedure": "İlk iki ölçü için kıskaç tablası yatay ve kıskaç kapalı olsun. İleri uzaklık ile düşey fark ayrı ölçülür; çapraz mesafe kullanılmaz. Düşey farkta M noktasının K1 seviyesinin altında mı üstünde mi olduğu belirtilir. Açıklıklar uçtaki iç tutma yüzlerinden alınır.",
+      "not_identified": "Parmak dönme merkezleri ve dişliler bu fotoğraflarda örtülü; fotoğraftan mafsal konumu veya mm tahmini yapılmadı.",
+      "image_method": "Yerleşik image_gen ile kullanıcı fotoğraflarına referans işaretleri eklendi. İlk görselin yan panelindeki K3 işareti örtüşme nedeniyle kaldırıldı; son görsel esas alınır.",
+      "forward_distance_clarification": "Kıskaç kapalı ve tablası yatayken, uçlardaki karşılıklı iç tutma yüzlerinin orta noktası M esas alınır. Parmak kollarının ortası veya en dış plastik kenar değil. K1 hizasından bu M hizasına yatay izdüşüm mesafesi ölçülür.",
+      "forward_distance_source": {
+        "reported_value_cm": 4.75,
+        "note": "Kullanıcı 4.75 cm yatay m dedi; K1 hizasından M hizasına yatay uzaklık olarak kaydedildi."
+      },
+      "vertical_sign_convention": "K1 seviyesine göre yukarı pozitif, aşağı negatif.",
+      "vertical_measurement_confirmed": {
+        "magnitude_mm": 37.0,
+        "direction": "below_K1",
+        "source": "Kullanıcı k1 in aşağısında m diyerek yönü doğruladı."
+      }
+    }
+  },
+  "version": 5,
+  "topology": {
+    "1": "Common shoulder axis; main drive and separate short drive are axially separated independent parts",
+    "2": "Fixed rear base anchor",
+    "3": "Rear triangle joint",
+    "4": "Triangle to upper front rod",
+    "5": "Common upper axis with independent triangle and forearm rotation",
+    "6": "Front upper mount axis",
+    "7": "Front lower mount axis",
+    "V": "Separate short drive lever tip, provisional old A-B endpoint mapping",
+    "R": "Separate horizontal-arm rear joint; not point 3"
+  },
+  "changes_from_v2": [
+    "Reference support base transverse coordinate reflected; rear fixed anchor and fixed rod now on same side.",
+    "Resolved computed CSS colors through a DOM element before sending them to Canvas; avoids black silhouettes."
+  ],
+  "record_date": "2026-10-30",
+  "gripper": {
+    "record_date": "2026-10-30",
+    "units": "mm",
+    "reference": "kiskac-olcum-noktalari.png",
+    "point_definitions": {
+      "K1": "Yandan görünen alt uç bağlantı vidasının merkezi. Üst bağlantı vidası veya servo montaj vidası değil.",
+      "K2": "Üstten fotoğraftaki üst parmağın uçtaki iç tutma yüzü.",
+      "K3": "Üstten fotoğraftaki alt parmağın uçtaki iç tutma yüzü.",
+      "M": "K2 ve K3 arasındaki sanal orta nokta; vida veya mafsal değil."
+    },
+    "measurements": {
+      "K1_to_M_forward_horizontal_closed_mm": 47.5,
+      "K1_to_M_vertical_closed_mm": -37.0,
+      "maximum_inner_gap_K2_K3_mm": 79.0,
+      "minimum_inner_gap_K2_K3_mm": 4.0
+    },
+    "procedure": "İlk iki ölçü için kıskaç tablası yatay ve kıskaç kapalı olsun. İleri uzaklık ile düşey fark ayrı ölçülür; çapraz mesafe kullanılmaz. Düşey farkta M noktasının K1 seviyesinin altında mı üstünde mi olduğu belirtilir. Açıklıklar uçtaki iç tutma yüzlerinden alınır.",
+    "not_identified": "Parmak dönme merkezleri ve dişliler bu fotoğraflarda örtülü; fotoğraftan mafsal konumu veya mm tahmini yapılmadı.",
+    "image_method": "Yerleşik image_gen ile kullanıcı fotoğraflarına referans işaretleri eklendi. İlk görselin yan panelindeki K3 işareti örtüşme nedeniyle kaldırıldı; son görsel esas alınır.",
+    "forward_distance_clarification": "Kıskaç kapalı ve tablası yatayken, uçlardaki karşılıklı iç tutma yüzlerinin orta noktası M esas alınır. Parmak kollarının ortası veya en dış plastik kenar değil. K1 hizasından bu M hizasına yatay izdüşüm mesafesi ölçülür.",
+    "forward_distance_source": {
+      "reported_value_cm": 4.75,
+      "note": "Kullanıcı 4.75 cm yatay m dedi; K1 hizasından M hizasına yatay uzaklık olarak kaydedildi."
+    },
+    "vertical_sign_convention": "K1 seviyesine göre yukarı pozitif, aşağı negatif.",
+    "vertical_measurement_confirmed": {
+      "magnitude_mm": 37.0,
+      "direction": "below_K1",
+      "source": "Kullanıcı k1 in aşağısında m diyerek yönü doğruladı."
+    },
+    "derived_closed_direct_distance_mm": 60.21004899516359,
+    "model_assumptions": {
+      "pivot_spacing_mm": 18.1,
+      "reference_finger_scale": 0.84,
+      "reference_contact_height_in_source_mm": 6.045,
+      "basis": "Referans STL dış biçimi ve varsayımsal dönme eksenleri. Bunlar kullanıcı ölçümü değildir.",
+      "frame": "K1, modelde 7 numaralı alt bağlantı eksenidir. İleri ve aşağı bileşenleri kıskaç tablasına bağlı yerel eksenlerdedir.",
+      "opening": "İç açıklık 4+0.75*pct mm; gerçek servo açısı kalibrasyonu değildir. Açılınca M ileri konumu referans dönme geometrisine bağlı değişir."
+    },
+    "closed_model_local_points": {
+      "K1": [
+        0,
+        0,
+        0
+      ],
+      "K2": [
+        47.50000000000001,
+        -37,
+        2
+      ],
+      "K3": [
+        47.500000000000014,
+        -37,
+        -2
+      ],
+      "M": [
+        47.500000000000014,
+        -37,
+        0
+      ]
+    },
+    "open_model_local_points": {
+      "K1": [
+        0,
+        0,
+        0
+      ],
+      "K2": [
+        32.11517247334332,
+        -37,
+        39.5
+      ],
+      "K3": [
+        32.12419721677083,
+        -37,
+        -39.5
+      ],
+      "M": [
+        32.11968484505708,
+        -37,
+        0
+      ]
+    }
+  },
+  "core_arm_geometry_unchanged": true,
+  "correction": "Eski U biçimli uç gövdesi kaldırıldı; tek avuç ve iki yan destek, iki parmağı taşıyor. Uç pim uzunlukları montaja uyarlandı.",
+  "mount_dimensions_assumed_mm": {
+    "side_plate_thickness": 3,
+    "side_plate_centers_lateral": [
+      -14,
+      14
+    ],
+    "palm_size": [
+      34,
+      5,
+      28
+    ],
+    "servo_box_size": [
+      23,
+      23,
+      12
+    ],
+    "pivot_post_size": [
+      3.2,
+      9,
+      3.2
+    ],
+    "side_plate_outline_forward_up": [
+      [
+        -5,
+        -3
+      ],
+      [
+        -2,
+        5
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        16,
+        22
+      ],
+      [
+        18,
+        14
+      ],
+      [
+        7,
+        -2
+      ],
+      [
+        10,
+        -28
+      ],
+      [
+        30,
+        -28
+      ],
+      [
+        30,
+        -35
+      ],
+      [
+        4,
+        -35
+      ]
+    ],
+    "coordinate_order": "forward, up, lateral; mm; K1 origin"
+  },
+  "scope": "Eski U biçimli uç gövdesi kaldırıldı. İki parmak tek avuç ve iki yan destekle birleştirildi. Dört kullanıcı ölçüsü korunuyor; gerçek dişli ve servo kalibrasyonu yapılmadı."
+}
